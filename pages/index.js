@@ -64,13 +64,46 @@ export default function Home() {
         borderRadius="lg"
         overflow="hidden"
         padding="3.5"
-        textAlign="center"
-        alignItems="center"
-        justifyContent="center"
+        textAlign="space-between"
+        alignItems="space-between"
+        justifyContent="space-between"
       >
-        <Heading as="h1" size="2xl" fontFamily={"monospace"}>
-          Funko Pop!
-        </Heading>
+        <HStack spacing="24px">
+          {/* Home icon */}
+          <Image
+            src="https://img.icons8.com/ios/50/000000/home.png"
+            alt="Home"
+          />
+          <Spacer />
+          <Spacer />
+          <Spacer />
+          <Spacer />
+          <Spacer />
+          <Spacer />
+          <Spacer />
+          <Spacer />
+        </HStack>
+        <Spacer />
+        <Image
+          src="images/funkos.png"
+          alt="Funko Pop"
+          width="10%"
+          height="10%"
+        />
+        <Spacer />
+        <HStack spacing="24px">
+          {/* Search icon */}
+          <Button variant="ghost" colorScheme="blue">
+            More Info
+          </Button>
+          <Button variant="ghost" colorScheme="blue">
+            About Us
+          </Button>
+          <Image
+            src="https://img.icons8.com/ios/50/000000/search--v1.png"
+            alt="Search"
+          />
+        </HStack>
       </Flex>
 
       <Heading as="h2" size="xl" alignSelf={"center"} ml="10%" m="2.5%">
